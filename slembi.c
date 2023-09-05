@@ -4,10 +4,10 @@
 
 int main(int argc, char *argv[]){
     
-    int n = atoi(argv[0]); // fær n af skipannalínunni
-    int k = atoi(argv[0]); // fær k af skipannalínu
+    int n = atoi(argv[1]); // fær n af skipannalínunni
+    int k = atoi(argv[2]); // fær k af skipannalínu
 
-    if (n<=0 || k <= 0){
+    if (n <= 0 || k <= 0){
         printf("Ógilt inntak. Bæði n og k verða að vera jákvæðar tölur");
         return 1;
     }
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
     }
 
     int telja = 0;
-    for (i=0;i<n;i++){
+    for (int i=0;i<n;i++){
         if (a[i] == 0){
             telja++;
         }
